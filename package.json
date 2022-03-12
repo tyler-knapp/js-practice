@@ -1,0 +1,19 @@
+{
+  "name": "js-practice",
+  "version": "1.0.0",
+  "description": "JavaScript Practice",
+  "main": "something.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyler-knapp/js-practice.git"
+  },
+  "author": "Tyler Knapp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tyler-knapp/js-practice/issues"
+  },
+  "homepage": "https://github.com/tyler-knapp/js-practice#readme"
+}
