@@ -9,29 +9,48 @@
     <p>Please fill out the following form</p>
     <form action="https://fcc-registration-form.com">
       <fieldset>
-        <label>Enter Your First Name: <input type="text" required /></label>
-        <label>Enter Your Last Name: <input type="text" required /></label>
-        <label>Enter Your Email: <input type="email" required /></label>
+        <label>Enter Your First Name: <input name="first-name" type="text" required /></label>
+        <label>Enter Your Last Name: <input name="last-name" type="text" required /></label>
+        <label>Enter Your Email: <input name="email" type="email" required /></label>
         <label
           >Create a New Password:
-          <input type="password" required pattern="[a-z0-5]{8,}"
+          <input name="password" type="password" required pattern="[a-z0-5]{8,}"
         /></label>
       </fieldset>
       <fieldset>
         <label
-          ><input name="account-type" type="radio" /> Personal Account</label
+          ><input class="inline" name="account-type" type="radio" /> Personal Account</label
         >
         <label
-          ><input name="account-type" type="radio" /> Business Account</label
+          ><input class="inline" name="account-type" type="radio" /> Business Account</label
         >
         <label
-          ><input type="checkbox" required /> I accept the
+          ><input class="inline" name="terms-and-conditions" type="checkbox" required /> I accept the
           <a href="https://www.freecodecamp.org/news/terms-of-service/"
             >terms and conditions</a
           >
         </label>
       </fieldset>
-      <fieldset></fieldset>
+      <fieldset>
+          <label>
+              Upload a profile picture: <input type="file">
+          </label>
+          <label>
+              Input your age (years): <input type="number" min="13" max="120">
+            </label>
+            <label>How did you hear about us?
+                <select name="how-did-you-hear">
+                    <option value="">(select one)</option>
+                    <option value="1">freeCodeCamp News</option>
+                    <option value="2">freeCodeCamp YouTube Channel</option>
+                    <option value="3">freeCodeCamp Forum</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+            <label>Provide a bio:  
+                <textarea name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+            </label>
+      </fieldset>
       <input type="submit" value="Submit"
     </form>
   </body>
